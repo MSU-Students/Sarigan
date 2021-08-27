@@ -23,7 +23,8 @@
       <q-input class="q-pa-sm" outlined v-model="text" label="Phone Number:" />
       <div class="float-right">
         <q-card-actions>
-          <q-btn to="/fprofilePage2">Next</q-btn>
+          <q-btn to="/userIdentifyer">cancel</q-btn>
+          <q-btn to="/fsigninPage2">Next</q-btn>
         </q-card-actions>
       </div>
     </q-card>
@@ -32,7 +33,11 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      text:'',
+      model:'',
+      options:''
+    };
   },
 };
 </script>

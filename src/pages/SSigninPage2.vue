@@ -22,7 +22,7 @@
       </q-input>
       <dev class="float-right">
         <q-card-actions>
-          <q-btn to="/sprofilePage">Back</q-btn>
+          <q-btn to="/ssigninPage">Back</q-btn>
           <q-btn>Create</q-btn>
         </q-card-actions>
       </dev>

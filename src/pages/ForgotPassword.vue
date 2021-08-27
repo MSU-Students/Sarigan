@@ -1,9 +1,8 @@
 <template>
   <q-page class="flex flex-center q-pa-xl bg-warning">
     <div>
-      <q-card class="q-pa-xl border">
-        <div class="text-h4">Create Account</div>
-        <q-input class="q-pa-sm" outlined v-model="text" label="Username:" />
+      <q-card class="q-pa-xl border bg-grey-1">
+        <div class="text-h4">New Password</div>
         <q-input
           class="q-pa-sm"
           outlined
@@ -21,10 +20,9 @@
           type="password"
         >
         </q-input>
-        <dev class="float-right">
+        <dev class="flex flex-center">
           <q-card-actions>
-            <q-btn color="primary" to="/fsigninPage">Back</q-btn>
-            <q-btn color="primary" to="/login">Create</q-btn>
+            <q-btn color="primary" to="/login">Save</q-btn>
           </q-card-actions>
         </dev>
       </q-card>

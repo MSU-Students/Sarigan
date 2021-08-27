@@ -4,6 +4,10 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { 
+        path: 'login', 
+        component: () => import('pages/Login.vue')
+      },
+      { 
         path: 'ssigninPage', 
         component: () => import('pages/SSigninPage.vue')
       },
@@ -22,6 +26,10 @@ const routes = [
       { 
         path: 'userIdentifyer', 
         component: () => import('pages/UserIdentifyer.vue')
+      },
+      { 
+        path: 'forgotPassword', 
+        component: () => import('pages/ForgotPassword.vue')
       }
     ]
   },

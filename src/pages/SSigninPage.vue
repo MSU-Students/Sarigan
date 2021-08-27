@@ -1,7 +1,7 @@
 <template>
-  <page class="bg-amber">
+  <q-page class="bg-warning flex flex-center">
     <div class="flex flex-center q-pa-md">
-      <q-card class="q-pa-xl">
+      <q-card class="q-pa-xl border">
         <div class="text-h3">Student Sign Up</div>
         <q-input class="q-pa-sm" outlined v-model="text" label="Given Name:" />
         <q-input class="q-pa-sm" outlined v-model="text" label="Last Name:" />
@@ -32,7 +32,7 @@
           v-model="text"
           label="Home Address:"
         />
-        <dev class="q-pa-sm">
+        <div class="q-pa-sm">
           <q-input
             class="q-pa-sm"
             outlined
@@ -46,34 +46,30 @@
             v-model="text"
             label="Phone Number:"
           />
-        </dev>
-        <dev class="float-right">
+        </div>
+        <div class="float-right">
           <q-card-actions>
-            <div>{{id}}</div>
-            <q-btn to="/userIdentifyer">cancel</q-btn>
-            <q-btn to="/ssigninPage2">Next</q-btn>
+            <q-btn color="blue" to="/userIdentifyer">cancel</q-btn>
+            <q-btn color="blue" to="/ssigninPage2">Next</q-btn>
           </q-card-actions>
-        </dev>
+        </div>
       </q-card>
     </div>
-  </page>
+  </q-page>
 </template>
 <script>
 export default {
   data() {
     return {
-          id: '0345678',
-          username:'sfsdf',
-          password:'sdfsdfs',
-          text:'',
-          options:'',
-          model:''
-    }
+      text: "",
+      options: "",
+      model: "",
+    };
   },
 };
 </script>
 <style>
-.outlined {
-  outline: orange 5px solid;
+.border {
+  border: 5px solid grey;
 }
 </style>

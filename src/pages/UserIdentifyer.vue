@@ -1,5 +1,6 @@
 <template>
-  <q-page class="flex flex-center q-pa-xl">
+  <q-page class="flex flex-center q-pa-xl bg-warning">
+    
     <div>
       <q-card class="q-pa-xl border">
         <div class="text-h4">CHOOSE TYPE OF USER</div>

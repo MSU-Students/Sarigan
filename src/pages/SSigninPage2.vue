@@ -22,10 +22,26 @@
       </q-input>
       <dev class="float-right">
         <q-card-actions>
-          <q-btn to="/sprofilePage">Back</q-btn>
-          <q-btn>Create</q-btn>
+          <q-btn to="/ssigninPage">Back</q-btn>
+          <q-btn @click="alertMessage()">Create</q-btn>
         </q-card-actions>
       </dev>
     </q-card>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      text: '',
+      messaage: 'ok'
+    };
+  },
+  methods: {
+    alertMessage (){
+      alert("ok")
+    }
+  }
+};
+</script>
